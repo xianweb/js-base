@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript基础 | 函数</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/js-base/assets/css/32.styles.40d7528b.css" as="style"><link rel="preload" href="/js-base/assets/js/app.c7e6368d.js" as="script"><link rel="preload" href="/js-base/assets/js/0.8e9a79d3.js" as="script"><link rel="prefetch" href="/js-base/assets/js/16.1048e8d5.js"><link rel="prefetch" href="/js-base/assets/js/1.201620aa.js"><link rel="prefetch" href="/js-base/assets/js/2.76f79118.js"><link rel="prefetch" href="/js-base/assets/js/3.1eceacf3.js"><link rel="prefetch" href="/js-base/assets/js/4.4eab2088.js"><link rel="prefetch" href="/js-base/assets/js/5.414b6ce4.js"><link rel="prefetch" href="/js-base/assets/js/6.96ff2e17.js"><link rel="prefetch" href="/js-base/assets/js/7.5568dd64.js"><link rel="prefetch" href="/js-base/assets/js/8.81d11b54.js"><link rel="prefetch" href="/js-base/assets/js/9.b44e76a0.js"><link rel="prefetch" href="/js-base/assets/js/10.f9ae8728.js"><link rel="prefetch" href="/js-base/assets/js/11.08a380a8.js"><link rel="prefetch" href="/js-base/assets/js/12.93e8efb8.js"><link rel="prefetch" href="/js-base/assets/js/13.d73b01a0.js"><link rel="prefetch" href="/js-base/assets/js/14.de1f5bec.js"><link rel="prefetch" href="/js-base/assets/js/15.ebf70b3c.js"><link rel="prefetch" href="/js-base/assets/js/17.fdf8c912.js"><link rel="prefetch" href="/js-base/assets/js/18.a7544003.js"><link rel="prefetch" href="/js-base/assets/js/19.522aaa0a.js"><link rel="prefetch" href="/js-base/assets/js/20.34656f7d.js"><link rel="prefetch" href="/js-base/assets/js/21.7fc86ce5.js"><link rel="prefetch" href="/js-base/assets/js/22.69f67aae.js"><link rel="prefetch" href="/js-base/assets/js/23.d7e0a2b3.js"><link rel="prefetch" href="/js-base/assets/js/24.e6478d9e.js"><link rel="prefetch" href="/js-base/assets/js/25.6478aed6.js"><link rel="prefetch" href="/js-base/assets/js/26.88f21d7d.js"><link rel="prefetch" href="/js-base/assets/js/27.19b61a5f.js"><link rel="prefetch" href="/js-base/assets/js/28.7c78dbf8.js"><link rel="prefetch" href="/js-base/assets/js/29.75f3055f.js"><link rel="prefetch" href="/js-base/assets/js/30.334b810a.js"><link rel="prefetch" href="/js-base/assets/js/31.98b63597.js">
+    <link rel="stylesheet" href="/js-base/assets/css/32.styles.40d7528b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/js-base/" class="home-link router-link-active"><!----><span class="site-name">
+      JavaScript基础
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>导论</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>语法</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/js-base/syntax/page1.html" class="sidebar-link">开发工具</a></li><li><a href="/js-base/syntax/page2.html" class="sidebar-link">VsCode开发工具安装</a></li><li><a href="/js-base/syntax/page3.html" class="sidebar-link">基本语法</a></li><li><a href="/js-base/syntax/page4.html" class="sidebar-link">数据类型</a></li><li><a href="/js-base/syntax/page5.html" class="sidebar-link">数值</a></li><li><a href="/js-base/syntax/page6.html" class="sidebar-link">字符串</a></li><li><a href="/js-base/syntax/page7.html" class="sidebar-link">对象</a></li><li><a href="/js-base/syntax/page8.html" class="sidebar-link">数组</a></li><li><a href="/js-base/syntax/page9.html" class="active sidebar-link">函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#概述" class="sidebar-link">概述</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数的重复声明" class="sidebar-link">函数的重复声明</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#圆括号运算符" class="sidebar-link">圆括号运算符</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数的return" class="sidebar-link">函数的return</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数的递归" class="sidebar-link">函数的递归</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#第一等公民" class="sidebar-link">第一等公民</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数名的提升" class="sidebar-link">函数名的提升</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#不能在条件语句中声明函数" class="sidebar-link">不能在条件语句中声明函数</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数的属性和方法" class="sidebar-link">函数的属性和方法</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#length-属性" class="sidebar-link">length 属性</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#tostring" class="sidebar-link">toString()</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数作用域" class="sidebar-link">函数作用域</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数内部的变量提升" class="sidebar-link">函数内部的变量提升</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数本身的作用域" class="sidebar-link">函数本身的作用域</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数的参数" class="sidebar-link">函数的参数</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#传递方式" class="sidebar-link">传递方式</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#函数闭包" class="sidebar-link">函数闭包</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#立即调用的函数表达式（iife）" class="sidebar-link">立即调用的函数表达式（IIFE）</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page9.html#eval-命令" class="sidebar-link">eval 命令</a></li></ul></li><li><a href="/js-base/syntax/page10.html" class="sidebar-link">运算符</a></li><li><a href="/js-base/syntax/page11.html" class="sidebar-link">数据类型转换</a></li><li><a href="/js-base/syntax/page12.html" class="sidebar-link">JavaScript 编程风格</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>标准库</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>DOM操作</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="函数"><a href="#函数" aria-hidden="true" class="header-anchor">#</a> 函数</h1><p>函数是一段可以反复调用的代码块。函数还能接受输入的参数，不同的参数会返回不同的值。</p><h2 id="概述"><a href="#概述" aria-hidden="true" class="header-anchor">#</a> 概述</h2><h3 id="函数的声明"><a href="#函数的声明" aria-hidden="true" class="header-anchor">#</a> 函数的声明</h3><p>JavaScript 有三种声明函数的方法。</p><h4 id="（1）function-命令"><a href="#（1）function-命令" aria-hidden="true" class="header-anchor">#</a> （1）function 命令</h4><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">print</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="（2）函数表达式"><a href="#（2）函数表达式" aria-hidden="true" class="header-anchor">#</a> （2）函数表达式</h4><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">print</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><p>采用函数表达式声明函数时，<code>function</code>命令后面不带有函数名。如果加上函数名，该函数名只在函数体内部有效，在函数体外部无效。</p><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">print</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">x</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+x
+<span class="token comment">// ReferenceError: x is not defined</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// function</span>
+</code></pre><div class="warning custom-block"><p class="custom-block-title">注意</p><p>需要注意的是，函数的表达式需要在语句的结尾加上分号，表示语句结束。而函数的声明在结尾的大括号后面不用加分号。总的来说，这两种声明函数的方式，差别很细微，可以近似认为是等价的。</p></div><h4 id="（3）function-构造函数"><a href="#（3）function-构造函数" aria-hidden="true" class="header-anchor">#</a> （3）Function 构造函数</h4><pre class="language-js"><code><span class="token keyword">var</span> add <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Function</span><span class="token punctuation">(</span>
+  <span class="token string">'x'</span><span class="token punctuation">,</span>
+  <span class="token string">'y'</span><span class="token punctuation">,</span>
+  <span class="token string">'return x + y'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 等同于</span>
+<span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="函数的重复声明"><a href="#函数的重复声明" aria-hidden="true" class="header-anchor">#</a> 函数的重复声明</h2><p>如果同一个函数被多次声明，后面的声明就会覆盖前面的声明。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+</code></pre><h2 id="圆括号运算符"><a href="#圆括号运算符" aria-hidden="true" class="header-anchor">#</a> 圆括号运算符</h2><p>调用函数时，要使用圆括号运算符。圆括号之中，可以加入函数的参数。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+</code></pre><h2 id="函数的return"><a href="#函数的return" aria-hidden="true" class="header-anchor">#</a> 函数的return</h2><p>函数体内部的return语句，表示返回。JavaScript 引擎遇到return语句，就直接返回return后面的那个表达式的值，后面即使还有语句，也不会得到执行。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">'hello'</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">' world!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// hello</span>
+</code></pre><h2 id="函数的递归"><a href="#函数的递归" aria-hidden="true" class="header-anchor">#</a> 函数的递归</h2><p>函数可以调用自身，这就是递归</p><p>用递归 来求 5 的阶乘，请看下面的例子。</p><pre class="language-js"><code><span class="token comment">// 定义一个函数，用于求 n 的阶乘</span>
+<span class="token keyword">function</span> <span class="token function">func</span><span class="token punctuation">(</span> n <span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span> n <span class="token operator">==</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// func(n-1) 因为传递的参数是 n-1,那么就是求 (n-1) 的阶乘</span>
+    <span class="token keyword">return</span> n <span class="token operator">*</span> <span class="token function">func</span><span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="第一等公民"><a href="#第一等公民" aria-hidden="true" class="header-anchor">#</a> 第一等公民</h2><p><code>JavaScript</code> 语言将函数看作一种值，与其它值（数值、字符串、布尔值等等）地位相同。凡是可以使用值的地方，就能使用函数。</p><p>由于函数与其他数据类型地位平等，所以在 <code>JavaScript</code> 语言中又称函数为<strong>第一等公民</strong>。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 将函数赋值给一个变量</span>
+<span class="token keyword">var</span> operator <span class="token operator">=</span> add<span class="token punctuation">;</span>
+
+<span class="token comment">// 将函数作为参数和返回值</span>
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span> fun <span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> fun<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">a</span><span class="token punctuation">(</span>add<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre><h2 id="函数名的提升"><a href="#函数名的提升" aria-hidden="true" class="header-anchor">#</a> 函数名的提升</h2><p>JavaScript 引擎将函数名视同变量名，所以采用function命令声明函数时，整个函数会像变量声明一样，被提升到代码头部。所以，下面的代码不会报错。</p><pre class="language-js"><code><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre><p>但是，表达式声明的函数，则不能提升</p><pre class="language-js"><code><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> <span class="token function-variable function">f</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// TypeError: undefined is not a function</span>
+</code></pre><h2 id="不能在条件语句中声明函数"><a href="#不能在条件语句中声明函数" aria-hidden="true" class="header-anchor">#</a> 不能在条件语句中声明函数</h2><p>根据 ES5 的规范，不得在非函数的代码块中声明函数，最常见的情况就是<code>if</code>和<code>try</code>语句。</p><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>foo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">x</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">x</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="函数的属性和方法"><a href="#函数的属性和方法" aria-hidden="true" class="header-anchor">#</a> 函数的属性和方法</h2><h3 id="name-属性"><a href="#name-属性" aria-hidden="true" class="header-anchor">#</a> name 属性</h3><p>函数的<code>name</code>属性返回函数的名字。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+f1<span class="token punctuation">.</span>name <span class="token comment">// &quot;f1&quot;</span>
+</code></pre><p>如果是通过变量赋值定义的函数，那么<code>name</code>属性返回变量名。</p><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">f2</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+f2<span class="token punctuation">.</span>name <span class="token comment">// &quot;f2&quot;</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">f3</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">myName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+f3<span class="token punctuation">.</span>name <span class="token comment">// 'myName'</span>
+</code></pre><h2 id="length-属性"><a href="#length-属性" aria-hidden="true" class="header-anchor">#</a> length 属性</h2><p>函数的<code>length</code>属性返回函数预期传入的参数个数，即函数定义之中的参数个数。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+f<span class="token punctuation">.</span>length <span class="token comment">// 2</span>
+</code></pre><h2 id="tostring"><a href="#tostring" aria-hidden="true" class="header-anchor">#</a> toString()</h2><p>函数的<code>toString</code>方法返回一个字符串，内容是函数的源码。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+f<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// function f() {</span>
+<span class="token comment">//  a();</span>
+<span class="token comment">//  b();</span>
+<span class="token comment">//  c();</span>
+<span class="token comment">// }</span>
+</code></pre><h2 id="函数作用域"><a href="#函数作用域" aria-hidden="true" class="header-anchor">#</a> 函数作用域</h2><h3 id="全局变量"><a href="#全局变量" aria-hidden="true" class="header-anchor">#</a> 全局变量</h3><p>函数外部声明的变量就是全局变量（global variable），它可以在函数内部读取。</p><pre class="language-js"><code><span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 1</span>
+</code></pre><h3 id="局部变量"><a href="#局部变量" aria-hidden="true" class="header-anchor">#</a> 局部变量</h3><p>在函数内部定义的变量，外部无法读取，称为“局部变量”（local variable）。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+v <span class="token comment">// ReferenceError: v is not defined</span>
+</code></pre><div class="danger custom-block"><p class="custom-block-title">注意</p><ul><li>局部变量，函数之外就无法读取</li><li>函数内部定义的变量，会在该作用域内覆盖同名全局变量。</li></ul></div><pre class="language-js"><code><span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+v <span class="token comment">// 1</span>
+</code></pre><h2 id="函数内部的变量提升"><a href="#函数内部的变量提升" aria-hidden="true" class="header-anchor">#</a> 函数内部的变量提升</h2><p>与全局作用域一样，函数作用域内部也会产生“变量提升”现象。</p><div class="warning custom-block"><p class="custom-block-title">注意</p><p>var命令声明的变量，不管在什么位置，变量声明都会被提升到函数体的头部。</p></div><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> tmp <span class="token operator">=</span> x <span class="token operator">-</span> <span class="token number">100</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 等同于</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> tmp<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    tmp <span class="token operator">=</span> x <span class="token operator">-</span> <span class="token number">100</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h2 id="函数本身的作用域"><a href="#函数本身的作用域" aria-hidden="true" class="header-anchor">#</a> 函数本身的作用域</h2><p>函数本身也是一个值，也有自己的作用域。</p><p>它的作用域与变量一样，<strong>就是其声明时所在的作用域，与其运行时所在的作用域无关</strong>。</p><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> <span class="token function-variable function">x</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token function">x</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//函数x是在函数f的外部声明的，所以它的作用域绑定外层</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+</code></pre><div class="danger custom-block"><p class="custom-block-title">注意</p><p>总之，函数执行时所在的作用域，是定义时的作用域，而不是调用时所在的作用域。</p></div><p>同样的，函数体内部声明的函数，作用域绑定函数体内部。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> bar<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> f <span class="token operator">=</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+</code></pre><h2 id="函数的参数"><a href="#函数的参数" aria-hidden="true" class="header-anchor">#</a> 函数的参数</h2><h3 id="概述-2"><a href="#概述-2" aria-hidden="true" class="header-anchor">#</a> 概述</h3><p>函数运行的时候，有时需要提供外部数据，不同的外部数据会得到不同的结果，这种外部数据就叫参数。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">square</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">*</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">square</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// 4</span>
+<span class="token function">square</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// 9</span>
+</code></pre><h3 id="参数的省略"><a href="#参数的省略" aria-hidden="true" class="header-anchor">#</a> 参数的省略</h3><p>函数参数不是必需的，Javascript 允许省略参数。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 1</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// undefined</span>
+
+f<span class="token punctuation">.</span>length <span class="token comment">// 2</span>
+</code></pre><h2 id="传递方式"><a href="#传递方式" aria-hidden="true" class="header-anchor">#</a> 传递方式</h2><p>函数参数如果是原始类型的值（数值、字符串、布尔值），传递方式是传值传递（passes by value）。这意味着，<strong>在函数体内修改参数值，不会影响到函数外部</strong>。</p><pre class="language-js"><code><span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  p <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">f</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+p <span class="token comment">// 2</span>
+</code></pre><h3 id="同名参数"><a href="#同名参数" aria-hidden="true" class="header-anchor">#</a> 同名参数</h3><p>如果有同名的参数，则取最后出现的那个值。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// 2</span>
+</code></pre><h3 id="arguments-对象"><a href="#arguments-对象" aria-hidden="true" class="header-anchor">#</a> arguments 对象</h3><h4 id="（1）定义"><a href="#（1）定义" aria-hidden="true" class="header-anchor">#</a> （1）定义</h4><p>由于 <code>JavaScript</code> 允许函数有不定数目的参数，所以需要一种机制，可以在函数体内部读取所有参数。这就是<code>arguments</code>对象的由来。</p><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">f</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>one<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+<span class="token comment">// 1</span>
+<span class="token comment">// 2</span>
+<span class="token comment">// 3</span>
+</code></pre><p>正常模式下，<code>arguments</code>对象可以在运行时修改。</p><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">f</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  arguments<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 5</span>
+</code></pre><h4 id="（2）与数组的关系"><a href="#（2）与数组的关系" aria-hidden="true" class="header-anchor">#</a> （2）与数组的关系</h4><p>需要注意的是，虽然arguments很像数组，但它是一个对象。数组专有的方法（比如slice和forEach），不能在arguments对象上直接使用。</p><pre class="language-js"><code><span class="token keyword">var</span> args <span class="token operator">=</span> Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>slice<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 或者</span>
+<span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arguments<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  args<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="（3）callee-属性"><a href="#（3）callee-属性" aria-hidden="true" class="header-anchor">#</a> （3）callee 属性</h4><p><code>arguments</code>对象带有一个<code>callee</code>属性，返回它所对应的原函数。</p><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">f</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">.</span>callee <span class="token operator">===</span> f<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+</code></pre><h2 id="函数闭包"><a href="#函数闭包" aria-hidden="true" class="header-anchor">#</a> 函数闭包</h2><p>闭包（closure）是 Javascript 语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。</p><p>理解闭包，首先必须理解变量作用域。前面提到，JavaScript 有两种作用域：全局作用域和函数作用域。函数内部可以直接读取全局变量。</p><pre class="language-js"><code><span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">999</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 999</span>
+</code></pre><p>函数外部无法读取函数内部声明的变量。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">999</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+<span class="token comment">// Uncaught ReferenceError: n is not defined</span>
+</code></pre><p>如果出于种种原因，需要得到函数内的局部变量。正常情况下，这是办不到的，只有通过变通方法才能实现。那就是在函数的内部，再定义一个函数。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">999</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">f2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+　　console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 999</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>既然f2可以读取f1的局部变量，那么只要把f2作为返回值，我们不就可以在f1外部读取它的内部变量了吗！</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">999</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">f2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> f2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token function">f1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">result</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 999</span>
+</code></pre><div class="warning custom-block"><p class="custom-block-title">注意</p><ul><li>闭包在函数内部返回函数，使得可以获取函数内部的局部变量。</li><li>闭包就是将函数内部和函数外部连接起来的一座桥梁</li><li>闭包让函数内部某局部变量始终保持在内存中</li></ul></div><p>闭包的另一个用处，是封装对象的私有属性和私有方法。</p><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> _age<span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">setAge</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    _age <span class="token operator">=</span> n<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">function</span> <span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> _age<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> name<span class="token punctuation">,</span>
+    getAge<span class="token punctuation">:</span> getAge<span class="token punctuation">,</span>
+    setAge<span class="token punctuation">:</span> setAge
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> p1 <span class="token operator">=</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token string">'张三'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+p1<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+p1<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 25</span>
+</code></pre><h2 id="立即调用的函数表达式（iife）"><a href="#立即调用的函数表达式（iife）" aria-hidden="true" class="header-anchor">#</a> 立即调用的函数表达式（IIFE）</h2><p>在 Javascript 中，圆括号()是一种运算符，跟在函数名之后，表示调用该函数。</p><p>有时，我们需要在定义函数之后，立即调用该函数。这时，你不能在函数的定义之后加上圆括号，这会产生语法<strong>错误</strong>。</p><pre class="language-js"><code><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// SyntaxError: Unexpected token (</span>
+</code></pre><p>产生这个错误的原因是，<code>function</code>这个关键字即可以当作语句，也可以当作表达式。</p><pre class="language-js"><code><span class="token comment">// 语句</span>
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">// 表达式</span>
+<span class="token keyword">var</span> <span class="token function-variable function">f</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre><div class="warning custom-block"><p class="custom-block-title">注意</p><p>为了避免解析上的歧义，JavaScript 引擎规定，如果function关键字出现在行首，一律解释成语句。</p><p>解决方法就是不要让function出现在行首，让引擎将其理解成一个表达式。最简单的处理，就是将其放在一个圆括号里面。</p></div><pre class="language-js"><code><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 或者</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>甚至像下面这样写，也是可以的。</p><pre class="language-js"><code><span class="token operator">!</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">~</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">-</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">+</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/* code */</span> <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h3 id="立即执行（iife）用途"><a href="#立即执行（iife）用途" aria-hidden="true" class="header-anchor">#</a> 立即执行（IIFE）用途</h3><ul><li>不必为函数命名，避免了污染全局变量。</li><li>IIFE 内部形成了一个单独的作用域，可以封装一些外部无法读取的私有变量。</li></ul><pre class="language-js"><code><span class="token comment">// 写法一</span>
+<span class="token keyword">var</span> tmp <span class="token operator">=</span> newData<span class="token punctuation">;</span>
+<span class="token function">processData</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">storeData</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 写法二</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> tmp <span class="token operator">=</span> newData<span class="token punctuation">;</span>
+  <span class="token function">processData</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">storeData</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>上面代码中，写法二比写法一更好，因为完全避免了污染全局变量。</p><h2 id="eval-命令"><a href="#eval-命令" aria-hidden="true" class="header-anchor">#</a> eval 命令</h2><p><code>eval</code>命令的作用是，将字符串当作语句执行。</p><pre class="language-js"><code><span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">'var a = 1;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+a <span class="token comment">// 1</span>
+</code></pre><p>eval没有自己的作用域，都在当前作用域内执行，因此可能会修改当前作用域的变量的值，<strong>造成安全问题</strong>。</p><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">'a = 2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/js-base/syntax/page8.html" class="prev">
+          数组
+        </a></span><span class="next"><a href="/js-base/syntax/page10.html">
+          运算符
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/js-base/assets/js/0.8e9a79d3.js" defer></script><script src="/js-base/assets/js/app.c7e6368d.js" defer></script>
+  </body>
+</html>

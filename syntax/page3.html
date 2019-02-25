@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript基础 | 基本语法</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/js-base/assets/css/32.styles.40d7528b.css" as="style"><link rel="preload" href="/js-base/assets/js/app.c7e6368d.js" as="script"><link rel="preload" href="/js-base/assets/js/6.96ff2e17.js" as="script"><link rel="prefetch" href="/js-base/assets/js/16.1048e8d5.js"><link rel="prefetch" href="/js-base/assets/js/0.8e9a79d3.js"><link rel="prefetch" href="/js-base/assets/js/1.201620aa.js"><link rel="prefetch" href="/js-base/assets/js/2.76f79118.js"><link rel="prefetch" href="/js-base/assets/js/3.1eceacf3.js"><link rel="prefetch" href="/js-base/assets/js/4.4eab2088.js"><link rel="prefetch" href="/js-base/assets/js/5.414b6ce4.js"><link rel="prefetch" href="/js-base/assets/js/7.5568dd64.js"><link rel="prefetch" href="/js-base/assets/js/8.81d11b54.js"><link rel="prefetch" href="/js-base/assets/js/9.b44e76a0.js"><link rel="prefetch" href="/js-base/assets/js/10.f9ae8728.js"><link rel="prefetch" href="/js-base/assets/js/11.08a380a8.js"><link rel="prefetch" href="/js-base/assets/js/12.93e8efb8.js"><link rel="prefetch" href="/js-base/assets/js/13.d73b01a0.js"><link rel="prefetch" href="/js-base/assets/js/14.de1f5bec.js"><link rel="prefetch" href="/js-base/assets/js/15.ebf70b3c.js"><link rel="prefetch" href="/js-base/assets/js/17.fdf8c912.js"><link rel="prefetch" href="/js-base/assets/js/18.a7544003.js"><link rel="prefetch" href="/js-base/assets/js/19.522aaa0a.js"><link rel="prefetch" href="/js-base/assets/js/20.34656f7d.js"><link rel="prefetch" href="/js-base/assets/js/21.7fc86ce5.js"><link rel="prefetch" href="/js-base/assets/js/22.69f67aae.js"><link rel="prefetch" href="/js-base/assets/js/23.d7e0a2b3.js"><link rel="prefetch" href="/js-base/assets/js/24.e6478d9e.js"><link rel="prefetch" href="/js-base/assets/js/25.6478aed6.js"><link rel="prefetch" href="/js-base/assets/js/26.88f21d7d.js"><link rel="prefetch" href="/js-base/assets/js/27.19b61a5f.js"><link rel="prefetch" href="/js-base/assets/js/28.7c78dbf8.js"><link rel="prefetch" href="/js-base/assets/js/29.75f3055f.js"><link rel="prefetch" href="/js-base/assets/js/30.334b810a.js"><link rel="prefetch" href="/js-base/assets/js/31.98b63597.js">
+    <link rel="stylesheet" href="/js-base/assets/css/32.styles.40d7528b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/js-base/" class="home-link router-link-active"><!----><span class="site-name">
+      JavaScript基础
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>导论</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>语法</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/js-base/syntax/page1.html" class="sidebar-link">开发工具</a></li><li><a href="/js-base/syntax/page2.html" class="sidebar-link">VsCode开发工具安装</a></li><li><a href="/js-base/syntax/page3.html" class="active sidebar-link">基本语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js-base/syntax/page3.html#语句" class="sidebar-link">语句</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page3.html#变量" class="sidebar-link">变量</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page3.html#注释" class="sidebar-link">注释</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page3.html#区块" class="sidebar-link">区块</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page3.html#条件语句" class="sidebar-link">条件语句</a></li><li class="sidebar-sub-header"><a href="/js-base/syntax/page3.html#循环语句" class="sidebar-link">循环语句</a></li></ul></li><li><a href="/js-base/syntax/page4.html" class="sidebar-link">数据类型</a></li><li><a href="/js-base/syntax/page5.html" class="sidebar-link">数值</a></li><li><a href="/js-base/syntax/page6.html" class="sidebar-link">字符串</a></li><li><a href="/js-base/syntax/page7.html" class="sidebar-link">对象</a></li><li><a href="/js-base/syntax/page8.html" class="sidebar-link">数组</a></li><li><a href="/js-base/syntax/page9.html" class="sidebar-link">函数</a></li><li><a href="/js-base/syntax/page10.html" class="sidebar-link">运算符</a></li><li><a href="/js-base/syntax/page11.html" class="sidebar-link">数据类型转换</a></li><li><a href="/js-base/syntax/page12.html" class="sidebar-link">JavaScript 编程风格</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>标准库</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>DOM操作</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>高级</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="基本语法"><a href="#基本语法" aria-hidden="true" class="header-anchor">#</a> 基本语法</h1><h2 id="语句"><a href="#语句" aria-hidden="true" class="header-anchor">#</a> 语句</h2><p>JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。</p><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">;</span>
+</code></pre><p>这条语句先用<code>var</code>命令，声明了变量<code>a</code>，然后将<code>1 + 3</code>的运算结果赋值给变量<code>a</code>。</p><p>1 + 3叫做表达式，指一个为了得到返回值的计算式。</p><h3 id="语句和表达式的区别"><a href="#语句和表达式的区别" aria-hidden="true" class="header-anchor">#</a> 语句和表达式的区别</h3><ol><li><p>语句主要为了进行某种操作，一般情况下不需要返回值。</p></li><li><p>表达式则是为了得到返回值，一定会返回一个值。</p></li></ol><div class="warning custom-block"><p class="custom-block-title">注意</p><p>凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式。</p></div><p>语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内。</p><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token punctuation">;</span> <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token string">'abc'</span><span class="token punctuation">;</span>
+</code></pre><h2 id="变量"><a href="#变量" aria-hidden="true" class="header-anchor">#</a> 变量</h2><h3 id="概念"><a href="#概念" aria-hidden="true" class="header-anchor">#</a> 概念</h3><p>变量是对“值”的具名引用。变量就是为“值”起名，然后引用这个名字，就等同于引用这个值。</p><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><div class="danger custom-block"><p class="custom-block-title">注意</p><p>注意，JavaScript 的变量名区分大小写，A和a是两个不同的变量。</p></div><p>如果只是声明变量而没有赋值，则该变量的值是<code>undefined</code>。</p><pre class="language-js"><code><span class="token keyword">var</span> a<span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+</code></pre><p>如果变量赋值的时候，忘了写<code>var</code>命令，这条语句也是有效的。</p><pre class="language-js"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment">// 基本等同</span>
+a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><p>如果一个变量没有声明就直接使用，<code>JavaScript</code> 会报错，告诉你变量未定义。</p><pre class="language-js"><code>x
+<span class="token comment">// ReferenceError: x is not defined</span>
+</code></pre><h3 id="变量提升"><a href="#变量提升" aria-hidden="true" class="header-anchor">#</a> 变量提升</h3><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><h3 id="变量声明规则"><a href="#变量声明规则" aria-hidden="true" class="header-anchor">#</a> 变量声明规则</h3><p>简单说，标识符命名规则如下。</p><p>第1个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。
+第2个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。</p><p>下面这些都是合法的标识符。</p><pre class="language-js"><code>arg0
+_tmp
+$elem
+π
+</code></pre><p>下面这些则是不合法的标识符。</p><pre class="language-js"><code><span class="token number">1</span>a  <span class="token comment">// 第一个字符不能是数字</span>
+<span class="token number">23</span>  <span class="token comment">// 同上</span>
+<span class="token operator">**</span><span class="token operator">*</span>  <span class="token comment">// 标识符不能包含星号</span>
+a<span class="token operator">+</span>b  <span class="token comment">// 标识符不能包含加号</span>
+<span class="token operator">-</span>d  <span class="token comment">// 标识符不能包含减号或连词线</span>
+</code></pre><p>中文是合法的标识符，可以用作变量名。</p><pre class="language-js"><code><span class="token keyword">var</span> 临时变量 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre><p>除此之外，不能命名系统保留字</p><pre class="language-text"><code>arguments、break、case、catch、class、const、continue、debugger、default、delete、do、else、enum、eval、export、extends、false、finally、for、function、if、implements、import、in、instanceof、interface、let、new、null、package、private、protected、public、return、static、super、switch、this、throw、true、try、typeof、var、void、while、with、yield。
+</code></pre><h2 id="注释"><a href="#注释" aria-hidden="true" class="header-anchor">#</a> 注释</h2><pre class="language-js"><code><span class="token comment">// 这是单行注释</span>
+
+<span class="token comment">/*
+ 这是
+ 多行
+ 注释
+*/</span>
+</code></pre><h2 id="区块"><a href="#区块" aria-hidden="true" class="header-anchor">#</a> 区块</h2><p>JavaScript 使用大括号，将多个相关的语句组合在一起，称为“区块”（block）。</p><p>对于var命令来说，JavaScript 的区块不构成单独的作用域（scope），后面es6中let具备作用域。</p><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+a <span class="token comment">// 1</span>
+</code></pre><h2 id="条件语句"><a href="#条件语句" aria-hidden="true" class="header-anchor">#</a> 条件语句</h2><p>JavaScript 提供if结构和switch结构，完成条件判断，即只有满足预设的条件，才会执行相应的语句。</p><h3 id="if-结构"><a href="#if-结构" aria-hidden="true" class="header-anchor">#</a> if 结构</h3><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>布尔值<span class="token punctuation">)</span>
+  语句<span class="token punctuation">;</span>
+
+<span class="token comment">// 或者</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>布尔值<span class="token punctuation">)</span> 语句<span class="token punctuation">;</span>
+</code></pre><p>建议总是在if语句中使用大括号，因为这样方便插入语句。</p><pre class="language-js"><code><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">==</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="if-else-结构"><a href="#if-else-结构" aria-hidden="true" class="header-anchor">#</a> if...else 结构</h3><p>if代码块后面，还可以跟一个else代码块，表示不满足条件时，所要执行的代码。</p><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">===</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 满足条件时，执行的语句</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 不满足条件时，执行的语句</span>
+<span class="token punctuation">}</span>
+</code></pre><p>多条件语句</p><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre><p>嵌套条件语句</p><pre class="language-js"><code><span class="token keyword">var</span> m <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">!==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>	
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'world'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>switch结构</p><pre class="language-js"><code><span class="token keyword">switch</span> <span class="token punctuation">(</span>fruit<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">case</span> <span class="token string">&quot;banana&quot;</span><span class="token punctuation">:</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">case</span> <span class="token string">&quot;apple&quot;</span><span class="token punctuation">:</span>
+    <span class="token comment">// ...</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">default</span><span class="token punctuation">:</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre><p>三元运算符 ?:</p><pre class="language-js"><code><span class="token punctuation">(</span>条件<span class="token punctuation">)</span> <span class="token operator">?</span> 表达式<span class="token number">1</span> <span class="token punctuation">:</span> 表达式<span class="token number">2</span>
+</code></pre><pre class="language-js"><code><span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> even <span class="token operator">=</span> <span class="token punctuation">(</span>n <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token boolean">true</span> <span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre><h2 id="循环语句"><a href="#循环语句" aria-hidden="true" class="header-anchor">#</a> 循环语句</h2><p>循环语句用于重复执行某个操作，它有多种形式。</p><h3 id="while-循环"><a href="#while-循环" aria-hidden="true" class="header-anchor">#</a> while 循环</h3><pre class="language-js"><code><span class="token keyword">while</span> <span class="token punctuation">(</span>条件<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  语句<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>下面是while语句的一个例子。</p><pre class="language-js"><code><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'i 当前为：'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p>下面的例子是一个无限循环，因为循环条件总是为真。</p><pre class="language-js"><code><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello, world'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="for-循环"><a href="#for-循环" aria-hidden="true" class="header-anchor">#</a> for 循环</h3><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span>初始化表达式<span class="token punctuation">;</span> 条件<span class="token punctuation">;</span> 递增表达式<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  语句
+<span class="token punctuation">}</span>
+</code></pre><p>下面是for语句的一个例子。</p><pre class="language-js"><code><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> x<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h3 id="do-while-循环"><a href="#do-while-循环" aria-hidden="true" class="header-anchor">#</a> do...while 循环</h3><pre class="language-js"><code><span class="token keyword">do</span> <span class="token punctuation">{</span>
+  语句
+<span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>条件<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>不管条件是否为真，do...while循环至少运行一次，这是这种结构最大的特点。</p><p>下面是一个例子。</p><pre class="language-js"><code><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">do</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h3 id="break-语句和-continue-语句"><a href="#break-语句和-continue-语句" aria-hidden="true" class="header-anchor">#</a> break 语句和 continue 语句</h3><p>break语句和continue语句都具有跳转作用，可以让代码不按既有的顺序执行。</p><p><code>break</code>语句用于跳出代码块或循环。</p><pre class="language-js"><code><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'i 当前为：'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><p><code>continue</code>语句用于立即终止本轮循环，返回循环结构的头部，开始下一轮循环。</p><pre class="language-js"><code><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'i 当前为：'</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/js-base/syntax/page2.html" class="prev">
+          VsCode开发工具安装
+        </a></span><span class="next"><a href="/js-base/syntax/page4.html">
+          数据类型
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/js-base/assets/js/6.96ff2e17.js" defer></script><script src="/js-base/assets/js/app.c7e6368d.js" defer></script>
+  </body>
+</html>
